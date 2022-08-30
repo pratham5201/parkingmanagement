@@ -1,0 +1,15 @@
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/home/pratham/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/pratham/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20220823-66498-qawt1x sitelibdir\=./.gem.20220823-66498-qawt1x clean
+
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20220823-66498-qawt1x sitelibdir\=./.gem.20220823-66498-qawt1x
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20220823-66498-qawt1x sitelibdir\=./.gem.20220823-66498-qawt1x install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20220823-66498-qawt1x

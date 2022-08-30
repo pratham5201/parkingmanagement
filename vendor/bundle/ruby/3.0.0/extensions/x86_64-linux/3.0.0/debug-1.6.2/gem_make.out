@@ -1,0 +1,16 @@
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+/home/pratham/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/pratham/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220823-66498-xa9q9j sitelibdir\=./.gem.20220823-66498-xa9q9j clean
+
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220823-66498-xa9q9j sitelibdir\=./.gem.20220823-66498-xa9q9j
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220823-66498-xa9q9j sitelibdir\=./.gem.20220823-66498-xa9q9j install
+/usr/bin/install -m 0755 debug.so ./.gem.20220823-66498-xa9q9j/debug

@@ -1,0 +1,16 @@
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/strscan-3.0.4/ext/strscan
+/home/pratham/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/pratham/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220823-66498-3lz8kt sitelibdir\=./.gem.20220823-66498-3lz8kt clean
+
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220823-66498-3lz8kt sitelibdir\=./.gem.20220823-66498-3lz8kt
+compiling strscan.c
+linking shared-object strscan.so
+
+current directory: /home/pratham/Desktop/Rails/parkingmanagement/vendor/bundle/ruby/3.0.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220823-66498-3lz8kt sitelibdir\=./.gem.20220823-66498-3lz8kt install
+/usr/bin/install -m 0755 strscan.so ./.gem.20220823-66498-3lz8kt

@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clientname: MyString
+  carnumber: MyString
+  carcolor: MyString
+  price: 1
+  slot: 1
+  status: MyString
+  floor_id: MyString
+
+two:
+  clientname: MyString
+  carnumber: MyString
+  carcolor: MyString
+  price: 1
+  slot: 1
+  status: MyString
+  floor_id: MyString
