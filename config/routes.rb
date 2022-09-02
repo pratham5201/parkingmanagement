@@ -1,23 +1,22 @@
 Rails.application.routes.draw do
-  resources :forms
-  resources :floors
+  get 'thanks/index'
   # devise_for :users
   devise_for :users,
              controllers: {
-                 sessions: 'users/sessions',
-                 registrations: 'users/registrations'
+               sessions: 'users/sessions',
+               registrations: 'users/registrations'
              }
   resources :users
   resources :floors
   resources :forms
-  root "home#home"
+  resources :thanks
+  root 'home#home'
 
   # devise_for :users,
   #            controllers: {
   #                sessions: 'users/sessions',
   #                registrations: 'users/registrations'
   #            }
-
 
   # get '/member-data', to: 'members#show'
 

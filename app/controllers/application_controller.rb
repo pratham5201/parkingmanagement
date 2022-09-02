@@ -43,11 +43,14 @@ class ApplicationController < ActionController::API
     user.floors.each do |floor|
       data << {
         floor_id: floor.id,
+        floor_number: floor.floor,
         floor_slots_length: floor.forms.count,
-        floor_slots: gen_floor_slots(floor)
+        floor_slots: gen_floor_slots(floor),
+        floor_url: floor_url(floor)
+        # Floor_link: link_to 'Floor', {:controller => "floor", :action => "show", :id => floor.id }
       }
     end
-    data
+    { Floors: data }
   end
 
   def gen_floor_slots(floor)
@@ -57,9 +60,29 @@ class ApplicationController < ActionController::API
         slot_id: slot.id, client_name: slot.clientname,
         car_number: slot.carnumber,
         car_color: slot.carcolor,
-        status: slot.status
+        status: slot.status,
+        sloot_url: form_url(slot),
+        sloot_price: slot.price
       }
     end
-    data
+    { slots: data }
+  end
+
+  def slot_payment(price)
+    require('stripe')
+
+    Stripe.api_key = 'sk_test_51LdFA9SANCZEKwhAsHtz1068unX0UQBWujOauuu7MzvoySKcDkCknV2CDB26VgUeEgGz3xoo0PVZRRZ7jveK2Mwv00AWm6JrhC'
+
+    price = Stripe::Price.create({
+                                   unit_amount: price * 100,
+                                   currency: 'inr',
+                                   product: 'prod_MM04XZUGZsX8Ow'
+                                 })
+
+    order = Stripe::PaymentLink.create(
+      line_items: [{ price: price.id, quantity: 1 }],
+      after_completion: { type: 'redirect', redirect: { url: 'http://localhost:3000/thanks' } }
+    )
+    system('xdg-open', order.url)
   end
 end

@@ -10,7 +10,7 @@ class Ability
         can :manage, :all
         # can :read, User
       end
-      can %i[create read], Form, user: user if user.role == 'client'
+      can %i[create read update], Form, user: user if user.role == 'client'
     end
   end
 end

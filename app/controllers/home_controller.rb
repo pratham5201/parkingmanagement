@@ -20,7 +20,6 @@ class HomeController < ApplicationController
 
   def current_user_data
     if current_user
-
       data = {
         id: current_user.id,
         name: current_user.name,
@@ -30,7 +29,6 @@ class HomeController < ApplicationController
       }
 
     end
-
-    data
+   { User_Data: data }
   end
 end
