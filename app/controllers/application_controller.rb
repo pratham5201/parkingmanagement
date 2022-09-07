@@ -23,19 +23,19 @@ class ApplicationController < ActionController::API
     render json: { error: 'User Access Denied!' }, status: 500
   end
 
-  def routing_error(_error = 'Routing error', _status = :not_found, _exception = nil)
-    # render_exception(404, "Routing Error", exception)
-    render json: {
-      message: 'Please Check Your Routes!!'
-    }, status: :not_found
-  end
-
   def check_user_params
     params[:user].present?
   end
 
   def show_info(response)
     render json: response, status: 200
+  end
+
+  def routing_error
+    # render_exception(404, "Routing Error", exception)
+    render json: {
+      message: 'please check url no route matches'
+    }, status: :not_found
   end
 
   def gen_floor(user)
@@ -85,4 +85,12 @@ class ApplicationController < ActionController::API
     )
     system('xdg-open', order.url)
   end
+
+  # def routing_error(_error = 'Routing error', _status = :not_found, _exception = nil)
+  #   # render_exception(404, "Routing Error", exception)
+  #   render json: {
+  #     message: 'Please Check Your Routes!!'
+  #   }, status: :not_found
+  # end
+  
 end

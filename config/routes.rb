@@ -23,6 +23,11 @@ Rails.application.routes.draw do
   # get '*path', :to => 'application#routing_error'
   # post '*path', :to => 'application#routing_error'
 
+  # if wrong route given
+  get '*path', to: 'application#routing_error'
+  post '*path', to: 'application#routing_error'
+  # ---------------------------
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
