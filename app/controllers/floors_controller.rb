@@ -28,9 +28,9 @@ class FloorsController < ApplicationController
       # render json: @floor.errors, status: :unprocessable_entity unless @floor.save
       redirect_to root_path
       # render json: @floor, status: :created, location: @floor if @floor.save
-      
+
     else
-      render json: { message: 'Maximum limmit reached out, no more floor can be added' }, status: :unprocessable_entity
+      render json: { message: 'Floor limmit reached out, no more floor can be added' }, status: :unprocessable_entity
     end
   end
 
