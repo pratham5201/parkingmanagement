@@ -7,6 +7,7 @@ module Users
     before_action :configure_permitted_parameters, if: :devise_controller?
     def create
       return not_authorized unless current_user # if the role of the current login user is admin then only create a user
+
       if current_user.role == 'admin'
         if check_user_params
           build_resource(sign_up_params)
